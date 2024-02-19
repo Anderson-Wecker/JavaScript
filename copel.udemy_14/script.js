@@ -19,7 +19,7 @@ function somaNumeros(a, b)
 let somarArrow = (a, b) => a + b;
 console.log(somarArrow(2, 3));
 console.log(somaNumeros(2,3));
-*/
+
 
 const parOuImpar = (n) =>
 {
@@ -40,3 +40,17 @@ const mensagem = () =>
 
 console.log(parOuImpar(3));
 console.log(mensagem())
+*/
+
+let consoleTeste = () =>
+{
+    console.log("Olá Mundo !!");
+};
+
+let soma = (a , b) =>
+{
+    return a + b;
+};
+
+console.log(console)
+console.log(soma(12 , 4));
