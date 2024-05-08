@@ -1,4 +1,4 @@
-/*let obj = {
+let obj = {
     rodas : 4,
     portas: 2,
     ttsolar: true,
@@ -9,7 +9,7 @@ const{portas: vportas, ttsolar: vttsolar, motor: vmotor, rodas: vrodas} = obj;
 
 console.log(`Quantidade de rodas : ${vrodas}`);
 console.log(vportas);
-console.log(`Motor: ${vmotor}`);*/
+console.log(`Motor: ${vmotor}`);
 
 let arr = [2,3,4,5,6];
 
