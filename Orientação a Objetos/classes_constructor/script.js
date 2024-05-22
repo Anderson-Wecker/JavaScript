@@ -40,8 +40,4 @@ class Pessoa
         this.dt_nascimento = dt_nascimento;
         this.cpf = cpf;
     }
-    sauda: function() 
-    {
-        console.log("Olá");    
-    }
 }
