@@ -20,21 +20,55 @@ class Func
     }
 }
 
-function exibeInfo()
-{
-    console.log(` Nome: ${Func.nome}\n`,
-                `Função: ${Func.funcao}\n`,
-                `Data Admissão: ${Func.dt_adm}\n`,
-                `Idade: ${Func.idade}`);
-}
-
 function criaFunc()
 {
-    Func.nome = prompt("Nome Funcionário: ");
-    Func.funcao = prompt("Função do Funcionário: ");
-    Func.dt_adm = prompt("Data de admissão do Funcionário: ");
-    Func.idade = prompt("idade do Funcionário: ");
+    let nome = prompt("Nome Funcionário: ");
+    let funcao = prompt("Função do Funcionário: ");
+    let dt_adm = prompt("Data de admissão do Funcionário: ");
+    let idade = prompt("idade do Funcionário: ");
+
+    try
+    {
+        let formattedDate = formataData(dt_adm);
+        let funcionario = new Func(nome, funcao, formattedDate, idade);
+        return funcionario;
+    }
+    catch(error)
+    {
+        console.error(error.menssage);
+        return null;
+    }    
 }
 
-criaFunc();
-exibeInfo();
+function formataData(dt_adm)
+{
+    if(dt_adm.length !== 8)
+    {
+        throw new Error("Entre com a data completa !!");
+    }
+    else
+    {
+
+        let dayData = dt_adm.substring(0, 2);
+        let monthData = dt_adm.substring(2, 4);
+        let yearData = dt_adm.substring(4, 8);
+    
+        let formatDate = `${dayData}/${monthData}/${yearData}`;
+        
+        return formatDate;
+    }
+} 
+
+function exibeInfo()
+{
+    if(funcionario)
+    {
+        console.log(` Nome: ${funcionario.nome}\n`,
+                    `Função: ${funcionario.funcao}\n`,
+                    `Data Admissão: ${funcionario.dt_adm}\n`,
+                    `Idade: ${funcionario.idade}`);
+    }
+}
+
+let funcionario = criaFunc()
+exibeInfo(funcionario);
