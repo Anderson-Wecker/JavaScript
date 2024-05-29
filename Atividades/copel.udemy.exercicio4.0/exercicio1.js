@@ -111,17 +111,13 @@ class Compras
 
     exibeProduct(newItem)
     {
-        if(newItem)
-        {
-            console.log(` Produto: ${newItem.product}\n`,
-                        `Quantidade: ${newItem.qtdTotal}\n`,
-                        `Valor: ${newItem.valTotal}`);
-        }
+        console.log(newItem.product);
+        console.log(newItem.qtdTotal);
+        console.log(newItem.valTotal);
+        
     }
 }
 
 let newItem = new Compras("Teclado", 2, 210);
 
-newItem.formatVal();
-console.log(newItem);
-newItem.exibeProduct(newItem.formatVal());
+exibeProduct(newItem);
