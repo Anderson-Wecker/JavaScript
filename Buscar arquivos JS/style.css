@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+button { padding: 10px 20px; margin-bottom: 20px; cursor: pointer; }
+ul { list-style: none; padding: 0; }
+li { padding: 5px 0; }
+.file { color: rgb(0, 26, 255); }
+.dir { color: green; font-weight: bold; }
