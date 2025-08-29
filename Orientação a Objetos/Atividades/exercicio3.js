@@ -73,11 +73,15 @@ class Conta
 let saldo = new Conta(2100, 2350);
 
 console.log(saldo);
-
-saldo.tranCP(100);
-
+saldo.deposPoup(100);
 console.log(saldo);
 
-saldo.tranCC(100);
+// console.log(saldo);
 
-console.log(saldo);
+// saldo.tranCP(100);
+
+// console.log(saldo);
+
+// saldo.tranCC(100);
+
+// console.log(saldo);
