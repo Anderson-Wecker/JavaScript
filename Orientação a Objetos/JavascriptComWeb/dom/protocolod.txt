@@ -1,0 +1,13 @@
+-> Protocolos Utilizado na Web(browser).
+-- HTTP -> Serve para nós solicitarmos arquivos, imagens e etc(Hyper Text Transfer Protocol).
+-- SMTP -> Protocolos para enviar e-mails.
+-- TCP -> Protocolo de transferência.
+
+
+-> Identificando uma URL
+
+http://www.horadecodar.com.br/index.html
+
+--> Protocolo -- http
+--> Servidor(DNS para um IP) -- www.horadecodar.com.br
+--> Arquivo -- index.html
